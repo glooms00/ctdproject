@@ -1,17 +1,21 @@
+
+
 import React from 'react';
-import { Text, } from 'react-native';
+import { View, Text } from 'react-native';
 import styles from './styles';
 
-const ContentComponent = ({ title, newText, paragraphText1, paragraphText2, paragraphText3 }) => {
+const ParagraphComponent = ({ paragraphTextData }) => {
+  const { newText, paragraphText1, paragraphText2, paragraphText3 } = paragraphTextData;
+
   return (
-    <>
-      <Text style={styles.title}>{title}</Text>
+    <View>
       <Text style={styles.newText}>{newText}</Text>
       <Text style={styles.p}>{paragraphText1}</Text>
       <Text style={styles.p}>{paragraphText2}</Text>
       <Text style={styles.p}>{paragraphText3}</Text>
-    </>
+    </View>
   );
 };
 
-export default ContentComponent;
+export default ParagraphComponent;
+
