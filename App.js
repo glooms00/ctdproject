@@ -1,12 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import { ImageBackground, Image, Text, TouchableOpacity, View, SafeAreaView, ScrollView } from 'react-native';
+import { Image, Text, TouchableOpacity, View, SafeAreaView, ScrollView } from 'react-native';
+import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import ImageWithTextComponent from './ImageWithTextComponent';
 import ParagraphComponent from './ParagraphComponent';
 import styles from './styles';
 import { imageTextData, paragraphTextData } from './data';
 
 
+
 export default function App() {
+  const navigation = useNavigation();
+
   return (
     <SafeAreaView style={styles.container}>
     <View style={styles.TextZone}>
