@@ -10,11 +10,15 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
     <View style={styles.TextZone}>
-    <TouchableOpacity style={styles.frameContainer}>
-          <Image
-            source={require('./assets/Frame.png')} 
-            style={styles.frameImage}
-    /></TouchableOpacity>
+    <TouchableOpacity
+  style={styles.frameContainer}
+  onPress={() => navigation.navigate('Home')}
+>
+  <Image
+    source={require('./assets/Frame.png')} 
+    style={styles.frameImage}
+  />
+ </TouchableOpacity>
     <Text style={styles.title}>the Local's word</Text>
     </View>
     <ScrollView contentContainerStyle={styles.scrollViewContent}>
