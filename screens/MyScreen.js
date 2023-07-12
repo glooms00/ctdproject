@@ -12,7 +12,7 @@ const MyScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.TextZone}>
-        <TouchableOpacity
+        {/*<TouchableOpacity
           style={styles.frameContainer}
           onPress={() => navigation.navigate('Home')}
         >
@@ -20,22 +20,13 @@ const MyScreen = () => {
             source={require('../assets/Frame.png')}
             style={styles.frameImage}
           />
-        </TouchableOpacity>
+        </TouchableOpacity>*/}
         <Text style={styles.title}>the Local's word</Text>
       </View>
       <ScrollView contentContainerStyle={styles.scrollViewContent}>
         <ImageWithTextComponent imageTextData={imageTextData} />
         <ParagraphComponent paragraphTextData={paragraphTextData} />
       </ScrollView>
-      <View style={styles.textZone1}>
-        <Image source={require('../assets/Frame2.png')} style={styles.Image} />
-        <Image source={require('../assets/Frame3.png')} style={styles.Image} />
-        <Image source={require('../assets/Group994.png')} style={styles.Image} />
-        <Image source={require('../assets/find1.png')} style={styles.Image} />
-        <TouchableOpacity style={styles.FrameContainer2}>
-          <Image source={require('../assets/menu1.png')} style={styles.Image1} />
-        </TouchableOpacity>
-      </View>
     </SafeAreaView>
   );
 };
