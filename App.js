@@ -1,8 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { Image, Text, TouchableOpacity, View, SafeAreaView, ScrollView } from 'react-native';
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
-import ImageWithTextComponent from './ImageWithTextComponent';
-import ParagraphComponent from './ParagraphComponent';
+import ImageWithTextComponent from './components/ImageWithTextComponent';
+import ParagraphComponent from './components/ParagraphComponent';
 import styles from './styles';
 import { imageTextData, paragraphTextData } from './data';
 

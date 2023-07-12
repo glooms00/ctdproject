@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, ImageBackground, Image, Text, TouchableOpacity } from 'react-native';
-import styles from './styles';
+import styles from '../styles';
 
 const ImageWithTextComponent = ({ imageTextData }) => {
   const { frameText1, overlayText, textZoneText } = imageTextData;
