@@ -13,11 +13,14 @@ import NearbyScreen from './screens/Nearby';
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
+const CustomHeader = () => {
+  return null; // Return null to hide the header
+};
 export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Tabs" component={TabNavigator} options={{ headerShown: false }} />
+         <Stack.Screen name="Tabs" component={TabNavigator} options={{ header: () => <CustomHeader />, headerShown: false }} />
         <Stack.Screen name="Home" component={HomeScreen} />
       </Stack.Navigator>
     </NavigationContainer>
@@ -52,11 +55,11 @@ function TabNavigator() {
         inactiveTintColor: 'black',
       }}
     >
-      <Tab.Screen name="HomePage" component={HomePageScreen} />
-      <Tab.Screen name="Favorite" component={FavoriteScreen} />
-      <Tab.Screen name="CircuitCreator" component={CircuitCreatorScreen} />
-      <Tab.Screen name="Nearby" component={NearbyScreen} />
-      <Tab.Screen name="MyScreen" component={MyScreen} />
+      <Tab.Screen name="HomePage" component={HomePageScreen} options={{ headerShown: false }}  />
+      <Tab.Screen name="Favorite" component={FavoriteScreen} options={{ headerShown: false }} />
+      <Tab.Screen name="CircuitCreator" component={CircuitCreatorScreen} options={{ headerShown: false }}  />
+      <Tab.Screen name="Nearby" component={NearbyScreen} options={{ headerShown: false }}  />
+      <Tab.Screen name="MyScreen" component={MyScreen} options={{ headerShown: false }}  />
     </Tab.Navigator>
   );
 }
