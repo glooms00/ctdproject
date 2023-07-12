@@ -12,7 +12,7 @@ const MyScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.TextZone}>
-        {/*<TouchableOpacity
+        <TouchableOpacity
           style={styles.frameContainer}
           onPress={() => navigation.navigate('Home')}
         >
@@ -20,7 +20,7 @@ const MyScreen = () => {
             source={require('../assets/Frame.png')}
             style={styles.frameImage}
           />
-        </TouchableOpacity>*/}
+        </TouchableOpacity>
         <Text style={styles.title}>the Local's word</Text>
       </View>
       <ScrollView contentContainerStyle={styles.scrollViewContent}>
