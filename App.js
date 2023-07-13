@@ -1,5 +1,5 @@
 import React from 'react';
-import { StatusBar, Image } from 'react-native';
+import { StatusBar, Image, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -9,6 +9,7 @@ import CircuitCreatorScreen from './screens/CircuitCreator';
 import FavoriteScreen from './screens/Favorite';
 import HomePageScreen from './screens/HomePage';
 import NearbyScreen from './screens/Nearby';
+import styles from './styles';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -30,9 +31,18 @@ export default function App() {
 function TabNavigator() {
   return (
     <Tab.Navigator
+    tabBarStyle={{ height: 75 }}
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
+          let containerStyle = [
+  styles.FrameContainer2,
+  { 
+    backgroundColor: focused ? '#FCC433' : 'transparent',
+    borderWidth: focused ? 1 : 0,
+    borderColor: focused ? '#070A27' : 'transparent',
+  }
+];
 
           if (route.name === 'HomePage') {
             iconName = require('./assets/Frame2.png');
@@ -46,13 +56,17 @@ function TabNavigator() {
             iconName = require('./assets/menu1.png');
           }
 
-          return <Image source={iconName} style={{ width: size, height: size, tintColor: focused ? 'yellow' : 'black' }} />;
+          return (
+            <View style={containerStyle}>
+              <Image source={iconName} style={{ width: 24, height: 24, tintColor: focused ? '#070A27' : '#070A27' }} />
+            </View>
+          );
         },
       })}
       tabBarOptions={{
         showLabel: false, // Hide the label of each tab
-        activeTintColor: 'yellow',
-        inactiveTintColor: 'black',
+        activeTintColor: '#070A27',
+        inactiveTintColor: '#070A27',
       }}
     >
       <Tab.Screen name="HomePage" component={HomePageScreen} options={{ headerShown: false }}  />

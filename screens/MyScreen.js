@@ -23,7 +23,10 @@ const MyScreen = () => {
         </TouchableOpacity>
         <Text style={styles.title}>the Local's word</Text>
       </View>
-      <ScrollView contentContainerStyle={styles.scrollViewContent}>
+      <ScrollView
+  contentContainerStyle={styles.scrollViewContent}
+  showsVerticalScrollIndicator={false}
+>
         <ImageWithTextComponent imageTextData={imageTextData} />
         <ParagraphComponent paragraphTextData={paragraphTextData} />
       </ScrollView>
