@@ -8,7 +8,7 @@ export default StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'center',
         //justifyContent: 'flex-start',
-        borderRadius: 20,
+        borderRadius: 0,
         justifyContent: 'center', 
       },
       TextZone: {
@@ -235,5 +235,6 @@ export default StyleSheet.create({
         width: 24,
         height: 24,
         marginRight: 2,
-      }
+      },
+     
     });
