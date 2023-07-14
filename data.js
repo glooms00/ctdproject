@@ -16,3 +16,6 @@ export const imageTextData = {
  export const headerData = {
    title : "the Local's word",
  };
+ export const CardData = {
+  city: "Khnifra"
+ };
