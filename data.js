@@ -12,3 +12,7 @@ export const imageTextData = {
         "Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression"
       ],
  };
+
+ export const headerData = {
+   title : "the Local's word",
+ };

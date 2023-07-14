@@ -15,7 +15,7 @@ const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
 const CustomHeader = () => {
-  return null; // Return null to hide the header
+  return null;
 };
 export default function App() {
   return (
@@ -30,8 +30,8 @@ export default function App() {
 
 function TabNavigator() {
   return (
+
     <Tab.Navigator
-    tabBarStyle={{ height: 75 }}
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
@@ -64,16 +64,53 @@ function TabNavigator() {
         },
       })}
       tabBarOptions={{
-        showLabel: false, // Hide the label of each tab
+        showLabel: false, 
         activeTintColor: '#070A27',
         inactiveTintColor: '#070A27',
+       
       }}
     >
-      <Tab.Screen name="HomePage" component={HomePageScreen} options={{ headerShown: false }}  />
-      <Tab.Screen name="Favorite" component={FavoriteScreen} options={{ headerShown: false }} />
-      <Tab.Screen name="CircuitCreator" component={CircuitCreatorScreen} options={{ headerShown: false }}  />
-      <Tab.Screen name="Nearby" component={NearbyScreen} options={{ headerShown: false }}  />
-      <Tab.Screen name="MyScreen" component={MyScreen} options={{ headerShown: false }}  />
+      
+      <Tab.Screen
+        name="HomePage"
+        component={HomePageScreen}
+        options={{
+          headerShown: false,
+          tabBarStyle: styles.tabBarStyle,
+        }}
+      />
+      <Tab.Screen
+        name="Favorite"
+        component={FavoriteScreen}
+        options={{
+          headerShown: false,
+          tabBarStyle: styles.tabBarStyle,
+        }}
+      />
+      <Tab.Screen
+        name="CircuitCreator"
+        component={CircuitCreatorScreen}
+        options={{
+          headerShown: false,
+          tabBarStyle: styles.tabBarStyle,
+        }}
+      />
+      <Tab.Screen
+        name="Nearby"
+        component={NearbyScreen}
+        options={{
+          headerShown: false,
+          tabBarStyle: styles.tabBarStyle,
+        }}
+      />
+      <Tab.Screen
+        name="MyScreen"
+        component={MyScreen}
+        options={{
+          headerShown: false,
+          tabBarStyle: styles.tabBarStyle,
+        }}
+      />
     </Tab.Navigator>
   );
 }

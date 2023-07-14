@@ -4,6 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import styles from '../styles';
 
 const Header = () => {
+  {/*const { title } = headerData;*/}
   const navigation = useNavigation();
 
   return (
