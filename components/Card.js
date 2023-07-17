@@ -1,20 +1,23 @@
 import React from 'react';
 import { View, ImageBackground, Image, Text } from 'react-native';
+import { cardData } from '../data';
 import styles from '../styles';
 
 const Card = () => {
-  
-    return (
+  const { imageSource, cityName } = cardData;
+
+  return (
+    <View style={styles.yellowRectangle}>
       <ImageBackground
-        source={require('../assets/Rectangle1169.png')}
+        source={imageSource}
         style={styles.card}
       >
-        <View style={styles.Zone}>
-          <Text style={styles.city}>city</Text>
+        <View style={styles.zone}>
+          <Text style={styles.city}>{cityName}</Text>
         </View>
       </ImageBackground>
-    );
-  };
-  
-  export default Card;
-  
+    </View>
+  );
+};
+
+export default Card;

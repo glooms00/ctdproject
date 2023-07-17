@@ -265,6 +265,8 @@ export default StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         marginHorizontal: 8,
+        bottom:19,
+        right:14,
       },
       Zone: {
         bottom:0,
@@ -273,6 +275,7 @@ export default StyleSheet.create({
         flexShrink: 0,
         borderRadius: 12,
         background: 'var(--gradient, linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%))',
+        right:12,
       },
       city: {
         color: '#FFF',
@@ -286,7 +289,20 @@ export default StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         position: 'absolute',
-        top:110,
-        left:80,
+        top:80,
+        //left:0,
+       // right:0,
+      },
+      yellowRectangle: {
+        
+        width: 188,
+        height: 230,
+        flexShrink: 0,
+        borderRadius: 12,
+        borderWidth: 1,
+        borderColor: '#070A27',
+        backgroundColor: '#FCC433',
+        top:34,
+        left:20,
       },
     });

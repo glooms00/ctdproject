@@ -16,6 +16,7 @@ export const imageTextData = {
  export const headerData = {
    title : "the Local's word",
  };
- export const CardData = {
-  city: "Khnifra"
- };
+ export const cardData = {
+  imageSource: require('./assets/Rectangle1169.png'),
+  cityName: 'City',
+};
