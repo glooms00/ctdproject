@@ -303,6 +303,15 @@ export default StyleSheet.create({
         borderColor: '#070A27',
         backgroundColor: '#FCC433',
         top:34,
-        left:20,
+        left:5,
+      },
+      largeCard: {
+        width: 196,
+        height: 240,
+      },
+    
+      mediumCard: {
+        width: 126,
+        height: 127,
       },
     });

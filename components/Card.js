@@ -3,8 +3,8 @@ import { View, ImageBackground, Image, Text } from 'react-native';
 import { cardData } from '../data';
 import styles from '../styles';
 
-const Card = () => {
-  const { imageSource, cityName } = cardData;
+const Card = ({ variant }) => {
+  const { imageSource, cityName } = cardData[variant];
 
   return (
     <View style={styles.yellowRectangle}>
