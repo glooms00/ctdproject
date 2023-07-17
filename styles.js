@@ -10,6 +10,7 @@ export default StyleSheet.create({
         //justifyContent: 'flex-start',
         borderRadius: 0,
         justifyContent: 'center', 
+        
       },
       TextZone: {
         top: 0,
@@ -47,7 +48,7 @@ export default StyleSheet.create({
         alignItems: 'center',
         borderRadius: 20,
         background: '#FFF',
-       marginLeft: 16,
+       marginLeft: 0,
         
       },
       frameContainer: {
@@ -91,7 +92,7 @@ export default StyleSheet.create({
         textTransform: 'capitalize',
         color: '#000',
         marginBottom: 16,
-        marginLeft: 16,
+        marginLeft: 0,
       },
       p: {
         display: 'flex',
@@ -106,7 +107,7 @@ export default StyleSheet.create({
         lineHeight: 24,
         fontSize: 16,
         marginBottom: 16,
-       marginLeft: 16,
+       marginLeft: 0,
       },
       textZone: {
         top: 80,
