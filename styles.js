@@ -29,7 +29,7 @@ export default StyleSheet.create({
       title: {
         color: '#070A27',
         fontSize: 18,
-        fontFamily: 'Inter',
+        //fontFamily: 'Inter',
         fontStyle: 'normal',
         fontWeight: '900',
         lineHeight: 24,
@@ -77,7 +77,7 @@ export default StyleSheet.create({
        top: 20,
        color: '#FFF',
        fontSize: 24,
-       fontFamily: 'Inter',
+      // fontFamily: 'Inter',
        fontStyle: 'normal',
        fontWeight: '700',
        lineHeight: 24,
@@ -85,7 +85,7 @@ export default StyleSheet.create({
       newText: {
         marginTop: 33,
         fontSize: 18,
-        fontFamily: 'Inter',
+       // fontFamily: 'Inter',
         fontWeight: 900,
         lineHeight: 24,
         letterSpacing: -0.54,
@@ -101,7 +101,7 @@ export default StyleSheet.create({
         flexShrink: 0,
         color: '#595959',
         fontSize: 16,
-        fontFamily: 'Inter',
+        //fontFamily: 'Inter',
         fontStyle: 'normal',
         fontWeight: '400',
         lineHeight: 24,
@@ -128,7 +128,7 @@ export default StyleSheet.create({
         flexShrink: 0,
         color: '#FFF',
         fontSize: 16,
-        fontFamily: 'Inter',
+        //fontFamily: 'Inter',
         fontStyle: 'normal',
         fontWeight: '400',
         lineHeight: 24,
@@ -159,7 +159,7 @@ export default StyleSheet.create({
       FrameText: {
         color: '#070A27',
         fontSize: 15,
-        fontFamily: 'Inter',
+       // fontFamily: 'Inter',
         fontStyle: 'normal',
         fontWeight: '500',
         lineHeight: 18,
@@ -191,7 +191,7 @@ export default StyleSheet.create({
       FrameText1: {
         color: '#212324',
         fontSize: 14,
-        fontFamily: 'Inter',
+        //fontFamily: 'Inter',
         fontStyle: 'normal',
         fontWeight: '400',
         lineHeight: 18,
@@ -253,7 +253,7 @@ export default StyleSheet.create({
         overflow: 'hidden',
       },
       card: {
-        width: 196,
+        width:  196,
         height: 240,
         flexShrink: 0,
         borderRadius: 12,
@@ -280,7 +280,7 @@ export default StyleSheet.create({
       },
       city: {
         color: '#FFF',
-        fontFamily: 'Inter',
+        //fontFamily: 'Inter',
         fontSize: 16,
         fontStyle: 'normal',
         fontWeight: '900',
@@ -295,9 +295,8 @@ export default StyleSheet.create({
        // right:0,
       },
       yellowRectangle: {
-        
-        width: 188,
-        height: 230,
+        width:188,
+        height:230,
         flexShrink: 0,
         borderRadius: 12,
         borderWidth: 1,
@@ -306,13 +305,27 @@ export default StyleSheet.create({
         top:34,
         left:5,
       },
-      largeCard: {
+      cardLarge: {
         width: 196,
         height: 240,
+        borderRadius: 12,
       },
     
-      mediumCard: {
+      cardMedium: {
         width: 126,
         height: 127,
+        borderRadius: 12,
+      },
+      triLarge: {
+        width: 188,
+        height: 230,
+        borderRadius: 12,
+      },
+    
+      triMedium: {
+        width: 114,
+        height: 109,
+        borderRadius: 12,
+        top:34,
       },
     });

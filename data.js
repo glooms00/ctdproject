@@ -17,60 +17,6 @@ export const imageTextData = {
    title : "the Local's word",
  };
  export const cardData = {
-  large: [
-    {
       imageSource: require('./assets/Rectangle1169.png'),
-      cityName: 'City 1',
-    },
-    {
-      imageSource: require('./assets/Rectangle1169.png'),
-      cityName: 'City 2',
-    },
-    {
-      imageSource: require('./assets/Rectangle1169.png'),
-      cityName: 'City 3',
-    },
-    {
-      imageSource: require('./assets/Rectangle1169.png'),
-      cityName: 'City 4',
-    },
-    {
-      imageSource: require('./assets/Rectangle1169.png'),
-      cityName: 'City 5',
-    },
-  ],
-  medium: [
-    {
-      imageSource: require('./assets/Rectangle1170.png'),
-      cityName: 'City 1',
-    },
-    {
-      imageSource: require('./assets/Rectangle1170.png'),
-      cityName: 'City 2',
-    },
-    {
-      imageSource: require('./assets/Rectangle1170.png'),
-      cityName: 'City 3',
-    },
-    {
-      imageSource: require('./assets/Rectangle1170.png'),
-      cityName: 'City 4',
-    },
-    {
-      imageSource: require('./assets/Rectangle1170.png'),
-      cityName: 'City 5',
-    },
-    {
-      imageSource: require('./assets/Rectangle1170.png'),
-      cityName: 'City 6',
-    },
-    {
-      imageSource: require('./assets/Rectangle1170.png'),
-      cityName: 'City 7',
-    },
-    {
-      imageSource: require('./assets/Rectangle1170.png'),
-      cityName: 'City 8',
-    },
-  ],
+      cityName: 'City',
 };
