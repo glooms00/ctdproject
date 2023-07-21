@@ -11,7 +11,10 @@ const HomeScreen = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView contentContainerStyle={styles.scrollViewContent} showsVerticalScrollIndicator={false}>
+      <ScrollView
+        contentContainerStyle={{ ...styles.scrollViewContent, flexGrow: 0.4}}
+        showsVerticalScrollIndicator={false}
+      >
         <Text style={styles.txt}>Regions (5)</Text>
         <FlatList
           data={[1, 2, 3, 4, 5]}

@@ -20,7 +20,7 @@ export const imageTextData = {
   if (variant === 'medium') {
     return {
       imageSource: require('./assets/Rectangle1170.png'),
-      cityName: 'oum Errabia    river',
+      cityName: ' oum Errabia \n river',
     };
   } else {
     return {

@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, ImageBackground, Image, Text, TouchableOpacity } from 'react-native';
 import styles from '../styles';
+import { LinearGradient } from 'expo-linear-gradient';
 
 const ImageWithTextComponent = ({ imageTextData }) => {
   const { frameText1, overlayText, textZoneText } = imageTextData;
@@ -19,8 +20,10 @@ const ImageWithTextComponent = ({ imageTextData }) => {
         <Text style={styles.FrameText1}>{frameText1}</Text>
       </TouchableOpacity>
       <View style={styles.textZone}>
+      <LinearGradient colors={['rgba(0, 0, 0, 0.00)', '#000']} style={styles.gradient1}>
         <Text style={styles.overlayText}>{overlayText}</Text>
         <Text style={styles.textZoneText}>{textZoneText}</Text>
+        </LinearGradient>
       </View>
     </ImageBackground>
   );
