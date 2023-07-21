@@ -16,7 +16,16 @@ export const imageTextData = {
  export const headerData = {
    title : "the Local's word",
  };
- export const cardData = {
+ export const cardData = (variant) => {
+  if (variant === 'medium') {
+    return {
+      imageSource: require('./assets/Rectangle1170.png'),
+      cityName: 'oum Errabia    river',
+    };
+  } else {
+    return {
       imageSource: require('./assets/Rectangle1169.png'),
-      cityName: 'City',
+      cityName: 'khnifra',
+    };
+  }
 };
