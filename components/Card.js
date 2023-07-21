@@ -21,5 +21,6 @@ const Card = ({ variant }) => {
   );
 };
 
+
 export default Card;
 
