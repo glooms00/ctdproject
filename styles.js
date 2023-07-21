@@ -284,7 +284,7 @@ export default StyleSheet.create({
         fontSize: 16,
         fontStyle: 'normal',
         fontWeight: '900',
-        lineHeight: 'normal',
+        //lineHeight: 'normal',
         letterSpacing: -0.8,
         textTransform: 'capitalize',
         justifyContent: 'center',

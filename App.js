@@ -36,13 +36,13 @@ function TabNavigator() {
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
           let containerStyle = [
-  styles.FrameContainer2,
-  { 
-    backgroundColor: focused ? '#FCC433' : 'transparent',
-    borderWidth: focused ? 1 : 0,
-    borderColor: focused ? '#070A27' : 'transparent',
-  }
-];
+            styles.FrameContainer2,
+            { 
+              backgroundColor: focused ? '#FCC433' : 'transparent',
+              borderWidth: focused ? 1 : 0,
+              borderColor: focused ? '#070A27' : 'transparent',
+            }
+          ];
 
           if (route.name === 'HomePage') {
             iconName = require('./assets/Frame2.png');
@@ -62,15 +62,15 @@ function TabNavigator() {
             </View>
           );
         },
+        tabBarActiveTintColor: '#070A27',
+        tabBarInactiveTintColor: '#070A27',
+        tabBarShowLabel: false,
+        tabBarStyle: [
+          { display: 'flex' },
+          null
+        ],
       })}
-      tabBarOptions={{
-        showLabel: false, 
-        activeTintColor: '#070A27',
-        inactiveTintColor: '#070A27',
-       
-      }}
     >
-      
       <Tab.Screen
         name="HomePage"
         component={HomePageScreen}
