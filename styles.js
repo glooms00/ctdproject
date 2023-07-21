@@ -149,6 +149,7 @@ export default StyleSheet.create({
         flexDirection: 'row',
         width: 77, 
         height: 35, 
+        zIndex: 2,
       },
       image: {
         width: 11,
