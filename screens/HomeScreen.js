@@ -14,7 +14,7 @@ const HomeScreen = () => {
     <SafeAreaView style={styles.container}>
     <Header2 />
       <ScrollView
-        contentContainerStyle={{ ...styles.scrollViewContent, flexGrow: 0.4}}
+        contentContainerStyle={{ ...styles.scrollViewContent, flexGrow: 0.5}}
         showsVerticalScrollIndicator={false}
       >
         <Text style={styles.txt}>Regions (5)</Text>

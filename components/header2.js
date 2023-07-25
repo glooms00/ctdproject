@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { View, TouchableOpacity, TouchableWithoutFeedback, Image, TextInput, Keyboard } from 'react-native';
 import styles from '../styles';
+import { useNavigation } from '@react-navigation/native';
 
 const Header2 = () => {
   const [isTextZoneVisible, setTextZoneVisible] = useState(false);
   const [searchText, setSearchText] = useState('');
-
+  const navigation = useNavigation();
   const handleSearchPress = () => {
     setTextZoneVisible(true);
   };
@@ -37,7 +38,7 @@ const Header2 = () => {
           </View>
         )}
         <Image source={require('../assets/fond1.png')} style={styles.fond} />
-        <TouchableOpacity style={styles.FrameContainer3} onPress={() => alert('Other button pressed')}>
+        <TouchableOpacity style={styles.FrameContainer3} onPress={() => navigation.navigate('MyScreen')}>
         <Image source={require('../assets/1116.png')} style={{ width: 19, height: 8 }} />
         </TouchableOpacity>
       </View>

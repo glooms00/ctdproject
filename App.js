@@ -21,8 +21,8 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-         <Stack.Screen name="Tabs" component={TabNavigator} options={{ header: () => <CustomHeader />, headerShown: false }} />
-        <Stack.Screen name="Home" component={HomeScreen}  />
+      <Stack.Screen name="Tabs" component={TabNavigator} options={{ header: () => <CustomHeader />, headerShown: false }} />
+        <Stack.Screen name="MyScreen" component={MyScreen} options={{ header: () => <CustomHeader />, headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -52,7 +52,7 @@ function TabNavigator() {
             iconName = require('./assets/Group994.png');
           } else if (route.name === 'Nearby') {
             iconName = require('./assets/find1.png');
-          } else if (route.name === 'MyScreen') {
+          } else if (route.name === 'HomeScreen') {
             iconName = require('./assets/menu1.png');
           }
 
@@ -104,8 +104,8 @@ function TabNavigator() {
         }}
       />
       <Tab.Screen
-        name="MyScreen"
-        component={MyScreen}
+        name="HomeScreen"
+        component={HomeScreen}
         options={{
           headerShown: false,
           tabBarStyle: styles.tabBarStyle,

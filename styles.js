@@ -21,7 +21,7 @@ export default StyleSheet.create({
         borderRadius: 24,
         background: 'var(--gradient, linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%))',
         justifyContent: 'center',
-        gap:8,
+        gap:99,
         flexDirection: 'row',
         alignItems: 'center',
         marginTop: 0,

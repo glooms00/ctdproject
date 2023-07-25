@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <View style={styles.TextZone}>
-      <TouchableOpacity style={styles.frameContainer} onPress={() => navigation.navigate('Home')}>
+      <TouchableOpacity style={styles.frameContainer} onPress={() => navigation.navigate('Tabs')}>
         <Image source={require('../assets/Frame.png')} style={styles.frameImage} />
       </TouchableOpacity>
       <Text style={styles.title}>the Local's word</Text>
