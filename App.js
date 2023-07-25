@@ -22,7 +22,7 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
          <Stack.Screen name="Tabs" component={TabNavigator} options={{ header: () => <CustomHeader />, headerShown: false }} />
-        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Home" component={HomeScreen}  />
       </Stack.Navigator>
     </NavigationContainer>
   );

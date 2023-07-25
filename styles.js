@@ -424,4 +424,21 @@ export default StyleSheet.create({
         borderRadius: 12,
         width: 343,
       },
+      fond: {
+        width: 75,
+        height: 75,
+        flexShrink: 0,
+      //  background: 'lightgray 50%' / cover no-repeat',
+      },
+      FrameContainer3: {
+        width: 48,
+       height: 48,
+       flexShrink: 0,
+       borderRadius: 48,
+       borderColor: '#070A27',
+       backgroundColor: '#E6E6E6',
+       borderWidth: 2,
+       alignItems: 'center',
+       justifyContent: 'center',
+      },
     });
