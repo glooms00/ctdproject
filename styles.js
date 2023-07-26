@@ -311,7 +311,7 @@ export default StyleSheet.create({
       yellowRectangle: {
         width:188,
         height:230,
-        flexShrink: 0,
+      //  flexShrink: 0,
         borderRadius: 12,
         borderWidth: 1,
         borderColor: '#070A27',
@@ -322,7 +322,7 @@ export default StyleSheet.create({
       cardLarge: {
         width:  196,
         height: 240,
-        flexShrink: 0,
+      //  flexShrink: 0,
         borderRadius: 12,
         borderWidth: 1,
         borderColor: '#070A27',
@@ -340,7 +340,7 @@ export default StyleSheet.create({
       cardMedium: {
         width: 126,
         height: 121,
-        flexShrink: 0,
+       // flexShrink: 0,
         borderRadius: 12,
         borderWidth: 1,
         borderColor: '#070A27',
@@ -358,7 +358,7 @@ export default StyleSheet.create({
       triLarge: {
         width: 188,
         height: 230,
-        flexShrink: 0,
+       // flexShrink: 0,
         borderRadius: 12,
         borderWidth: 1,
         borderColor: '#070A27',
@@ -392,7 +392,7 @@ export default StyleSheet.create({
         bottom:0,
         width: 126,
         height: 51,
-        flexShrink: 0,
+       // flexShrink: 0,
         borderRadius: 12,
         left:0,
         bottom:0,
@@ -410,6 +410,7 @@ export default StyleSheet.create({
         marginBottom: 0,
         marginLeft: 0,
         left:0,
+        top:0,
       },
       gradient: {
         flex: 1,
