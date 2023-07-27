@@ -23,7 +23,7 @@ const RegionSection = () => {
         horizontal
         showsHorizontalScrollIndicator={false}
         ItemSeparatorComponent={() => <View style={{ width: 23 }} />}
-        contentContainerStyle={{ paddingHorizontal: 15,}}/>
+        contentContainerStyle={{ paddingHorizontal: 15,  flexGrow:0}}/>
       
     </View>
   );
