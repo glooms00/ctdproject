@@ -398,6 +398,33 @@ export default StyleSheet.create({
         bottom:0,
         top:35,
       },
+      triSlim: {
+        width: 120,
+        height: 176,
+        flexShrink: 0,
+        borderRadius: 12,
+        borderWidth: 1,
+        borderColor: 'var(--black, #070A27)',
+        backgroundColor: '#FCC433',
+      },
+    
+      cardSlim: {
+        width: 132,
+        height: 188,
+        flexShrink: 0,
+        borderRadius: 12,
+        borderWidth: 1,
+        borderColor: '#070A27',
+        backgroundColor: '#D9D9D9',
+      },
+    
+      zSlim: {
+        width: 132,
+        height: 62,
+        flexShrink: 0,
+        borderRadius: '0px 0px 12px 12px',
+        top:63,
+      },
       txt: {
         marginTop: 0,
         fontSize: 18,

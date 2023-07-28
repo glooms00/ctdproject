@@ -16,15 +16,16 @@ const RegionSection = () => {
           <Text style={{ color: 'grey', width: 68, height: 19, fontSize: 18 }}>See All</Text>
         </TouchableOpacity>
       </View>
+      <View style={{ backgroundColor: '#FFF', height: 284 }}>
       <FlatList
         data={[1, 2, 3, 4, 5]}
         renderItem={({ item, index }) => renderCard({ item, index })}
         keyExtractor={(item) => item.toString()}
         horizontal
         showsHorizontalScrollIndicator={false}
-        ItemSeparatorComponent={() => <View style={{ width: 23 }} />}
+        ItemSeparatorComponent={() => <View style={{ width: 28 }} />}
         contentContainerStyle={{ paddingHorizontal: 15,  flexGrow:0}}/>
-      
+      </View>
     </View>
   );
 };

@@ -6,6 +6,7 @@ import Header2 from '../components/header2';
 import Album from '../components/Album';
 import RegionSection from '../components/RegionSection';
 import ExcursionSection from '../components/ExcursionSection';
+import RestarentsSection from '../components/RestarentsSection';
 
 const HomeScreen = () => {
   
@@ -16,6 +17,14 @@ const HomeScreen = () => {
         <RegionSection />
         <ExcursionSection />
         <Album />
+        <View style={{ backgroundColor: '#FFF', top:24 }}>
+        <RegionSection />
+        <RegionSection />
+        <RegionSection />
+        <RestarentsSection />
+        <ExcursionSection />
+        <RestarentsSection />
+        </View>
       </ScrollView>
     </SafeAreaView>
   );

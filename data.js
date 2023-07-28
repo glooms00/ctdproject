@@ -22,7 +22,14 @@ export const imageTextData = {
       imageSource: require('./assets/Rectangle1170.png'),
       cityName: ' oum Errabia \n river',
     };
-  } else {
+  } 
+  else if (variant === 'slim') {
+    return {
+      imageSource: require('./assets/Rectangle1131.png'),
+      cityName: ' oum Errabia \n river',
+    }
+  }
+    else {
     return {
       imageSource: require('./assets/Rectangle1169.png'),
       cityName: 'khnifra',
