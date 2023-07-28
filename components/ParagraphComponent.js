@@ -12,6 +12,7 @@ const ParagraphComponent = ({ paragraphTextData }) => {
       <Text style={styles.newText}>{newText}</Text>
       <Text style={styles.p}>{paragraphs.join('\n\n')}</Text>
     </View>
+    
   );
 };
 

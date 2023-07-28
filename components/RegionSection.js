@@ -27,6 +27,7 @@ const RegionSection = () => {
         contentContainerStyle={{ paddingHorizontal: 15,  flexGrow:0}}/>
       </View>
     </View>
+    
   );
 };
 

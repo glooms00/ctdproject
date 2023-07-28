@@ -28,6 +28,7 @@ const ExcursionSection = () => {
       />
     </View>
     </View>
+    
   );
 };
 
