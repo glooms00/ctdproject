@@ -27,6 +27,7 @@ const HomeScreen = () => {
         </View>
       </ScrollView>
     </SafeAreaView>
+    
   );
 };
 
