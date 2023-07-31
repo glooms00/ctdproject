@@ -13,7 +13,7 @@ const Album = () => {
         </TouchableOpacity>
       </View>
 
-      {/* Modified styling for the parent View */}
+      
       <View style={{ alignItems: 'flex-start' }}>
         <View style={styles.yellowRectangle1}>
           <View style={styles.whiteRectangle}>
